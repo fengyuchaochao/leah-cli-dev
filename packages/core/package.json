@@ -21,5 +21,6 @@
   },
   "dependencies": {
     "@leah-cli-dev/utils": "^1.0.1"
-  }
+  },
+  "gitHead": "0dcaf9d6085c6baac41678a9026164ed098ecbd3"
 }

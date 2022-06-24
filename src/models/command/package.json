@@ -1,5 +1,5 @@
 {
-  "name": "@leah-cli-dev/get-npm-info",
+  "name": "@leah-cli-dev/command",
   "version": "1.0.3",
   "description": "> TODO: description",
   "author": "yuchaofeng <yuchaofeng@tencent.com>",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://mirrors.tencent.com/npm/"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,8 @@
     "url": "https://github.com/fengyuchaochao/leah-cli-dev/issues"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "semver": "^7.3.7",
-    "url-join": "^4.0.1"
-  },
-  "gitHead": "bb9c6a9e9de3c50ae791b08192ad05949e235ab7"
+    "@leah-cli-dev/log": "^1.0.3",
+    "colors": "^1.4.0",
+    "semver": "^7.3.7"
+  }
 }

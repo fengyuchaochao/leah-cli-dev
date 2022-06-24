@@ -30,7 +30,6 @@ async function core() {
 
 async function prepare() {
   checkPkgVersion();
-  checkNodeVersion();
   checkRoot();
   checkUserHome();
   checkEnv();
@@ -41,19 +40,7 @@ async function prepare() {
 function checkPkgVersion() {
   log.info('当前版本为：', pkg.version);
 }
-// 检测node最低版本
-function checkNodeVersion() {
-  // 1. 获取当前系统的node版本
-  const currentVersion = process.version;
-  // 2. 获取node最低版本限制
-  const lowestVersion = constant.LOWEST_NODE_VERSION;
-  // 3. 如果系统版本小于node最低版本限制，则要报错提示
-  if (!semver.gte(currentVersion, lowestVersion)) {
-    throw new Error(
-      colors.red(`leah-cli-dev 需要安装 v${lowestVersion} 以上版本的 Node.js`)
-    );
-  }
-}
+
 // 检测root账户
 function checkRoot() {
   const rootCheck = require('root-check');

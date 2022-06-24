@@ -1,6 +1,6 @@
 {
   "name": "@leah-cli-dev/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "yuchaofeng <yuchaofeng@tencent.com>",
   "homepage": "",
@@ -23,11 +23,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@leah-cli-dev/exec": "^1.0.2",
-    "@leah-cli-dev/get-npm-info": "^1.0.2",
-    "@leah-cli-dev/init": "^1.0.2",
-    "@leah-cli-dev/log": "^1.0.2",
-    "@leah-cli-dev/utils": "^1.0.2",
+    "@leah-cli-dev/exec": "^1.0.3",
+    "@leah-cli-dev/get-npm-info": "^1.0.3",
+    "@leah-cli-dev/init": "^1.0.3",
+    "@leah-cli-dev/log": "^1.0.3",
+    "@leah-cli-dev/utils": "^1.0.3",
     "colors": "^1.4.0",
     "commander": "^9.3.0",
     "dotenv": "^16.0.1",

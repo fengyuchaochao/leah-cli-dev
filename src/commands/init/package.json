@@ -1,11 +1,11 @@
 {
-  "name": "@leah-cli-dev/core",
+  "name": "@leah-cli-dev/init",
   "version": "1.0.1",
   "description": "> TODO: description",
   "author": "yuchaofeng <yuchaofeng@tencent.com>",
-  "homepage": "",
+  "homepage": "https://github.com/fengyuchaochao/leah-cli-dev#readme",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -16,11 +16,18 @@
   "publishConfig": {
     "registry": "https://mirrors.tencent.com/npm/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengyuchaochao/leah-cli-dev.git"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@leah-cli-dev/utils": "^1.0.1"
+    "@leah-cli-dev/log": "^1.0.1",
+    "inquirer": "^7.3.3"
   },
-  "gitHead": "0dcaf9d6085c6baac41678a9026164ed098ecbd3"
+  "bugs": {
+    "url": "https://github.com/fengyuchaochao/leah-cli-dev/issues"
+  }
 }

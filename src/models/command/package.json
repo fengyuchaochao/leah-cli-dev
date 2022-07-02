@@ -1,6 +1,6 @@
 {
   "name": "@leah-cli-dev/command",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "yuchaofeng <yuchaofeng@tencent.com>",
   "homepage": "https://github.com/fengyuchaochao/leah-cli-dev#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/fengyuchaochao/leah-cli-dev/issues"
   },
   "dependencies": {
-    "@leah-cli-dev/log": "^1.0.3",
+    "@leah-cli-dev/log": "^1.0.4",
     "colors": "^1.4.0",
     "semver": "^7.3.7"
   }

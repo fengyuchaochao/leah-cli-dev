@@ -1,6 +1,6 @@
 {
   "name": "@leah-cli-dev/init",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "yuchaofeng <yuchaofeng@tencent.com>",
   "homepage": "https://github.com/fengyuchaochao/leah-cli-dev#readme",
@@ -24,8 +24,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@leah-cli-dev/log": "^1.0.3",
-    "@leah-cli-dev/command": "^1.0.3",
+    "@leah-cli-dev/command": "^1.0.4",
+    "@leah-cli-dev/log": "^1.0.4",
     "inquirer": "^7.3.3"
   },
   "bugs": {

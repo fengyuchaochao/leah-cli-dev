@@ -1,6 +1,6 @@
 {
   "name": "@leah-cli-dev/core",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "> TODO: description",
   "author": "yuchaofeng <yuchaofeng@tencent.com>",
   "homepage": "",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@leah-cli-dev/exec": "^1.0.4",
     "@leah-cli-dev/get-npm-info": "^1.0.4",
-    "@leah-cli-dev/init": "^1.0.5",
+    "@leah-cli-dev/init": "^1.0.6",
     "@leah-cli-dev/log": "^1.0.4",
     "@leah-cli-dev/utils": "^1.0.4",
     "colors": "^1.4.0",

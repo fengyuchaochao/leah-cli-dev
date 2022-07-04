@@ -11,7 +11,7 @@ class InitCommand extends Command {
     log.verbose('projectName', this.projectName);
   }
   exec() {
-    console.log('init具体业务逻辑')
+    console.log('init具体业务逻辑!!!')
   }
 }
 

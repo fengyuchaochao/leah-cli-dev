@@ -3,6 +3,7 @@ const cp = require('child_process');
 
 const Package = require('@leah-cli-dev/package');
 const log = require('@leah-cli-dev/log');
+const {exec: spawn} = require('@leah-cli-dev/utils');
 
 const SETTINGS = {
   init: '@leah-cli-dev/init',
@@ -81,15 +82,5 @@ async function exec(...argv) {
     }
   }
 }
-
-function spawn(command, args, options) {
-	const win32 = process.platform === 'win32';
-
-	const cmd = win32 ? 'cmd' : command;
-	const cmdArgs = win32 ? ['/c'].concat(command, args) : args;
-
-	return cp.spawn(cmd, cmdArgs, options || {})
-}
-
 
 module.exports = exec;

@@ -2,7 +2,7 @@
 const path = require('path');
 const pkgDir = require('pkg-dir').sync;
 const npmInstall = require('npminstall');
-const pathExists = require('path-exists');
+const pathExists = require('path-exists').sync;
 const fse = require('fs-extra');
 
 const { isObject } = require('@leah-cli-dev/utils');
@@ -91,9 +91,12 @@ class Package {
         registry: getDefaultRegistry(),
         pkgs: [{ name: this.packageName, version: latestPackageVersion }],
       });
-      // 安装了最新版本的package之后，记得更新当前package实例的packageVersion
+       // 安装了最新版本的package之后，记得更新当前package实例的packageVersion
+      this.packageVersion = latestPackageVersion;
+    } else {
       this.packageVersion = latestPackageVersion;
     }
+   
   }
   // 获取入口文件路径
   getRootFilePath() {

@@ -39,7 +39,7 @@ class Command {
   }
   // 解析参数argv
   initArgs() {
-    this.cmd = this._argv[this._argv.length - 1];
+    this.cmd = this._argv[this._argv.length - 2];
     this._argv = this._argv.slice(0, -1);
   }
   init() {

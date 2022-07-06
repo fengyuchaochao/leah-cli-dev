@@ -22,7 +22,7 @@ function getNpmInfo(npmName, registry) {
 function getDefaultRegistry(isOriginal = false) {
   return isOriginal
     ? 'https://registry.npmjs.org'
-    : 'https://mirrors.tencent.com/npm/';
+    : 'https://registry.npmjs.org';
 }
 
 // 获取npm指定包的所有版本
@@ -52,7 +52,7 @@ async function getNpmSemverVersions(baseVersion, npmName, registry) {
 // 获取npm指定包的最新版本
 async function getNpmLatestVersion(npmName, registry) {
   let versions = await getNpmVersions(npmName, registry);
-  return versions ? versions.sort((a, b) => semver.gt(b, a)) : null;
+  return versions ? versions.sort((a, b) => semver.gt(b, a))[versions.length - 1] : null;
 }
 
 module.exports = {

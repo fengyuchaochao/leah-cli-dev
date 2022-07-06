@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "@leah-cli-dev/log": "^1.0.4",
-    "@leah-cli-dev/package": "^1.0.4"
+    "@leah-cli-dev/package": "^1.0.4",
+    "@leah-cli-dev/utils": "^1.0.4"
   },
   "bugs": {
     "url": "https://github.com/fengyuchaochao/leah-cli-dev/issues"

@@ -38,8 +38,7 @@ class Package {
       fse.mkdirpSync(this.storeDir);
     }
     if (this.packageVersion === 'lasted') {
-      this.packageVersion = '1.0.1';
-      // this.packageVersion = await getNpmLatestVersion(this.packageName);
+      this.packageVersion = await getNpmLatestVersion(this.packageName);
     }
   }
   get cacheFilePath() {
